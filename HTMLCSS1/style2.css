@@ -1,0 +1,58 @@
+th,td, tr{
+    border-style: inset;
+}
+table {
+    border: 2px outset #000;
+}
+
+h1, h2 {
+    color: green;
+}
+
+p {
+    display: block;
+    width: 50%;
+
+}
+
+.redbullet {
+   list-style: none;
+}
+
+.redbullet li::before {
+    content: "\25E6";
+    color: red;
+    font-weight: 600;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.trblue {
+    color: blue;
+    font-weight: 600;
+}
+
+.trpink {
+    color: palevioletred;
+    font-weight: 600;
+}
+
+label {
+    color: orangered;
+    font-weight: 600;
+}
+
+span {
+    color: orange;
+}
+
+form {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+}
+
+ul {
+    font-weight: 600;
+}

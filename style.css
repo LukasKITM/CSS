@@ -15,12 +15,14 @@ html {
 }
 
 body {
-    background: black;
+    background-image: url(./Images/bgimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header {
     background: rgb(19, 19, 19);
-    margin-bottom: 1rem;
     box-shadow: 2px black;
 }
 
@@ -59,17 +61,8 @@ h1 {
     font-family: Chakra;
     color: greenyellow;
     margin-bottom: .6rem;
-    border: 2px solid white;
-    border-radius: 10px 10px 0 0;
-    border-style: dotted;
-    display: inline-block;
+    margin-left: 40px;
     transition: .5s;
-
-}
-
-h1:hover {
-    color: black;
-    background: white;
 }
 
 h2 {
@@ -79,30 +72,21 @@ h2 {
     font-family: Chakra;
     color: greenyellow;
     margin-bottom: .6rem;
-    border: 2px solid white;
-    border-radius: 0 0 10px 10px;
-    border-style: dashed;
-    display: inline-block;
+    margin-left: 40px;
     transition: .5s;
 }
 
-h2:hover {
-    color: black;
-    background: white;
-}
-
-
 p {
+    width: 520px;
     font-size: 1.2rem ;
     font-family: Chakra;
     color: greenyellow;
     border: 2px solid transparent;
     border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
     transition: .5s;
     position: relative;
     margin: 2rem;
+    display:flex;
 }
 
 p:hover {
@@ -110,6 +94,31 @@ p:hover {
     border: 2px solid yellowgreen;
     border-radius: 15px 0 15px 0;
     color: black;
+}
+
+ .short {
+    width: 520px;
+    font-size: 1.2rem ;
+    font-family: Chakra;
+    color: greenyellow;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: .5s;
+    position: relative;
+    margin: 2rem;
+}
+
+.short:hover {
+    background: yellowgreen;
+    border: 2px solid yellowgreen;
+    border-radius: 15px 0 15px 0;
+    color: black;
+    padding: 10px;
+}
+
+hr {
+    width: 40%;
+    margin-left: 40px;
 }
 
 .break {
@@ -123,4 +132,32 @@ p:hover {
     border: 2px solid transparent;
     border-radius: 5px;
     padding: 25px;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    border: 1px solid yellowgreen;
+    margin: 10px 0;
+    transition: .5s;
+}
+
+img:hover{
+    border: 5px solid yellowgreen;
+}
+
+.contain {
+    object-fit: contain;
+}
+
+.cover {
+    object-fit: cover;
+}
+
+.fill {
+    object-fit: fill;
+}
+
+.scale-down {
+    object-fit: scale-down;
 }
